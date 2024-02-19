@@ -23,7 +23,7 @@ public class Main {
             System.out.println(ex);
         }
         System.out.println("Модуль a: " + cs.mod(a));
-        System.out.println("Модуль b: " + cs.mod(b));
+        System.out.println("Мoдуль b: " + cs.mod(b));
         System.out.println("Сравнение a и перегруженного конструктора: " + cs.equal(a, new Complex()));
         System.out.println("Сравнение a и b: " + cs.equal(a,b));
     }
