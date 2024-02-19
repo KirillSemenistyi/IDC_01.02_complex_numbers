@@ -14,7 +14,11 @@ public class ComplexService {
     public Complex mul(Complex a, Complex b) {
         return new Complex(a.getX()*b.getX()-a.getY()*b.getY(), a.getX()*b.getY()+b.getX()*a.getY());
     }
-    public Complex div(Complex a, Complex b) {
+    public Complex div(Complex a, Complex b) throws Exception {
+
+        if (b.getX()==0 && b.getY()==0) {
+            throw new Exception("Division by zero");
+        }
         double x = a.getX();
         double x1 = b.getX();
         double y = a.getY();

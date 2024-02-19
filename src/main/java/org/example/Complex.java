@@ -3,13 +3,13 @@ package org.example;
 public class Complex {
     private double x, y;
 
-    Complex(double x, double y){
-        this.x=x;
-        this.y=y;
+    Complex(double real, double imaginary){
+        this.x=real;
+        this.y=imaginary;
     }
     Complex(){
-        x=5;
-        y=3;
+        x=0;
+        y=0;
     }
 
     public void setX(double x) {
