@@ -3,7 +3,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Complex a = new Complex(1,2);
-        Complex b = new Complex();
+        Complex b = new Complex(3,4);
         ComplexService cs = new ComplexService();
         System.out.println("a: " + cs.str(a));
         System.out.println("b: " + cs.str(b));
@@ -17,7 +17,7 @@ public class Main {
             System.out.println(ex);
         }
         try {
-            System.out.println("Частное: " + cs.str(cs.div(a,new Complex(2,1))));
+            System.out.println("Частное: " + cs.str(cs.div(a,new Complex())));
         }
         catch (Exception ex){
             System.out.println(ex);
